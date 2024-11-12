@@ -1,0 +1,67 @@
+object MainFrm: TMainFrm
+  Left = 354
+  Height = 392
+  Top = 214
+  Width = 1240
+  Caption = 'NComp Docker UI'
+  ClientHeight = 392
+  ClientWidth = 1240
+  OnShow = FormShow
+  LCLVersion = '3.6.0.0'
+  object MainFrmPageControl: TPageControl
+    Left = 0
+    Height = 359
+    Top = 32
+    Width = 1240
+    ActivePage = ContainerListTabSheet
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 0
+    object ContainerListTabSheet: TTabSheet
+      Caption = 'Containers'
+      ClientHeight = 328
+      ClientWidth = 1230
+      object DockerContainersStrGrid: TStringGrid
+        Left = -5
+        Height = 192
+        Top = 0
+        Width = 1240
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        ColCount = 7
+        FixedCols = 0
+        FixedRows = 0
+        TabOrder = 0
+      end
+      object RefreshContainersBtn: TBitBtn
+        Left = 1157
+        Height = 30
+        Top = 192
+        Width = 75
+        Anchors = [akRight, akBottom]
+        Caption = 'Refresh'
+        OnClick = RefreshContainersBtnClick
+        TabOrder = 1
+      end
+      object StartContainerBtn: TBitBtn
+        Left = 1013
+        Height = 30
+        Top = 192
+        Width = 75
+        Anchors = [akRight, akBottom]
+        Caption = 'Start'
+        OnClick = StartContainerBtnClick
+        TabOrder = 2
+      end
+      object StopContainerBtn: TBitBtn
+        Left = 1085
+        Height = 30
+        Top = 192
+        Width = 75
+        Anchors = [akRight, akBottom]
+        Caption = 'Stop'
+        OnClick = StopContainerBtnClick
+        TabOrder = 3
+      end
+    end
+  end
+end

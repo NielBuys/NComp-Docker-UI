@@ -1,0 +1,8 @@
+Verander version no met 'n text editor in "debpackage/NComp-Docker-UI/DEBIAN/control"
+Verander version no met 'n text editor in "debpackage/NComp-Docker-UI/usr/share/applications/NcompDockerUI.desktop"
+
+dpkg-deb --build NComp-Docker-UI
+
+
+-----
+desktop-file-validate NComp-Docker-UI/usr/share/applications/NcompDockerUI.desktop

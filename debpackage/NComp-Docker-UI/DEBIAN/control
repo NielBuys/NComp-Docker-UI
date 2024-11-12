@@ -1,0 +1,8 @@
+Package: NComp-Docker-UI
+Version: 0.0-1
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Niel Buys nbuys@ncomp.co.za
+Homepage: https://www.ncomp.co.za
+Description: Docker User interface tool

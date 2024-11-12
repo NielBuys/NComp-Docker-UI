@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Terminal=false
+StartupWMClass=NcompDockerUI
+Exec=pkexec /usr/local/bin/NcompDockerUI
+Name=NComp Docker UI
+Icon=NcompDockerUI
+Categories=Utility;
+
